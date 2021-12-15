@@ -8,7 +8,8 @@ def f(x): # 근을 구하고자 하는 함수
 
 def bisection (fun, s, f): # 이분법 정의
     n=0
-    if (fun(s)*fun(f))>0: m=100 # 근을 구할수 없을때
+    if (fun(s)*fun(f))>0:  # 근을 구할수 없을때
+        print("이분법을 사용할 수 없음.")
     else:
         while 1:
             n+=1
