@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 def FDD(list): # 유한 차분
     if len(list)==2: # 성분이 2개일때는 지정된 값으로 계산
@@ -28,9 +29,7 @@ def NFDD(list, x):
         z+=1
     return s
 
-# 3번으로 확인
-# x_l=[-1, 1, 2, 3]
-# y_l=[1, -3, -5, 1]
+# 주어진 좌표
 x_l=[0, 1.1, 2.3, 3.8, 4.5, 5.4, 5.9, 6.7, 8.4]
 y_l=[1, 2, 0.5, 1.2, 1.6, 2.8, 4.7, 5.2, 4.5]
 
@@ -43,7 +42,6 @@ print(f"f(4.9)={a}")
 
 
 # 시각화
-import matplotlib.pyplot as plt
 x=np.linspace(0,9, 1000)
 z=0
 yl=[]
