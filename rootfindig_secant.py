@@ -1,4 +1,4 @@
-# 이 코드는 newton method를 사용해서 방정식의 해를 구해줍니다.
+# 이 코드는 선법 사용해서 방정식의 해를 구해줍니다.
 import numpy as np
 
 def f(x):
